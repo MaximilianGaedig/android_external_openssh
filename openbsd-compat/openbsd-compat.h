@@ -314,6 +314,7 @@ int	bcrypt_pbkdf(const char *, size_t, const u_int8_t *, size_t,
     u_int8_t *, size_t, unsigned int);
 #endif
 
+#define HAVE_EXPLICIT_BZERO
 #ifndef HAVE_EXPLICIT_BZERO
 void explicit_bzero(void *p, size_t n);
 #endif
